@@ -601,6 +601,12 @@ body {
 }
 /* ==========Footer-social======== */
 
+.footer-box {
+ display: flex;
+  align-items: baseline; 
+  justify-content: space-between;
+}
+
 .footer-social p {
   font-weight: 700;
   font-size: 14px;
@@ -658,14 +664,12 @@ body {
 
 .footer-form-text {
  margin-bottom: 20px;  
-
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: #FFFFFF;
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 1.14;
+  letter-spacing: 0.03em;
+ text-transform: uppercase;
+ color: #FFFFFF;
 }
 
 .footer-form {
@@ -673,30 +677,38 @@ color: #FFFFFF;
   align-items: center;
 }
 
+.footer-form-field {
+ margin-right: 12px;
+}
+
 .footer-input-email {
-   width: 358px;
-  height: 50px;
-  padding: 0;
-  padding-left: 16px;
-  background-color: var(--third-backgraund-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 4px
+ width: 358px;
+ height: 50px;
+ padding: 0;
+ padding-left: 16px;
+ background-color: var(--third-backgraund-color);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ border-radius: 4px
 }
 
 .footer-input-email::placeholder {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 1.25;
+ letter-spacing: 0.03em;
+ color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-input-email:focus {
-  outline: none;
-  border-color: var(--accent-color);
+ outline: none;
+ border-color: var(--accent-color);
 }
 
 .footer-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -706,15 +718,10 @@ color: rgba(255, 255, 255, 0.6);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-   background-color: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--second-text-color);
-
   transition: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -725,19 +732,12 @@ color: rgba(255, 255, 255, 0.6);
   background-color: #188ce8;
 }
 
-.btn-position {
-  position: relative;
-}
-
 .footer-icon-send {
-  position: absolute;
-  width: 24px;
-  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
   fill: #fff;
- 
-  /* top: 50%;
-  transform: translateY(-50%);  */
-
+  margin-left: 10px;
 }
 
 /* =======Portfolio===== */
