@@ -604,7 +604,7 @@ body {
 .footer-box {
  display: flex;
   align-items: baseline; 
-  justify-content: space-between;
+  
 }
 
 .footer-social p {
@@ -662,6 +662,10 @@ body {
 
 /* ========Footer form ======= */
 
+.submit {
+  margin-left: auto;
+}
+
 .footer-form-text {
  margin-bottom: 20px;  
  font-weight: 700;
@@ -686,6 +690,7 @@ body {
  height: 50px;
  padding: 0;
  padding-left: 16px;
+color: #fff;
  background-color: var(--third-backgraund-color);
  border: 1px solid rgba(255, 255, 255, 0.3);
  border-radius: 4px
@@ -1016,7 +1021,7 @@ body {
 .modal-form-check-field {
   display: flex;
   align-items: center;
-
+justify-content: center;
   margin-bottom: 30px;
 }
 
